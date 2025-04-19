@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         BlocProvider<ConnectivityBloc>(create: (context) => ConnectivityBloc()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: const SettingsScreen(),
       ),
     );
